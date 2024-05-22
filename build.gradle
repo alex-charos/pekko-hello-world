@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+  implementation 'org.apache.pekko:pekko-actor-typed_2.13:1.0.2'
+  implementation 'ch.qos.logback:logback-classic:1.2.13'
+  testImplementation 'org.apache.pekko:pekko-actor-testkit-typed_2.13:1.0.2'
+  testImplementation 'junit:junit:4.13.1'
+}
+
+mainClassName = "gr.charos.PekkoQuickstart"
+
+run {
+  standardInput = System.in
+}

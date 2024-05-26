@@ -1,7 +1,8 @@
 package gr.charos.demo.iot;
 
 import gr.charos.demo.iot.command.*;
-import org.apache.pekko.actor.typed.ActorRef;
+import gr.charos.demo.iot.reply.RespondTemperature;
+import gr.charos.demo.iot.reply.TemperatureRecorded;
 import org.apache.pekko.actor.typed.Behavior;
 import org.apache.pekko.actor.typed.PostStop;
 import org.apache.pekko.actor.typed.javadsl.AbstractBehavior;

@@ -1,8 +1,8 @@
-package gr.charos.demo.iot.command;
+package gr.charos.demo.iot.reply;
 
 import java.util.Optional;
 
-public final class RespondTemperature {
+public final class RespondTemperature implements Reply {
     final long requestId;
     final Optional<Double> value;
 
